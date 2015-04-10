@@ -2,7 +2,9 @@
 
 // 1. Create a new Playground. Include all the code of this assignment in a single Playground.
 
-// 2a - Function rank performs a binary search of a key in a sorted integer array.  If the key appears in the array, the rank function returns the index of key in the array. If the key does not appear in the array, the rank function returns -1.
+// 2a - Function rank performs a binary search of a key in a sorted integer array.  
+// If the key appears in the array, the rank function returns the index of key in the array. 
+// If the key does not appear in the array, the rank function returns -1.
 public func rank(key: Int, a: [Int]) -> Int {
     var lo = 0
     var hi = a.capacity - 1
@@ -36,7 +38,10 @@ println(rank(547, sortedArray))
 
 
 
-// 3a - Add methods to the version 4 of the Fraction class to compute the subtraction, multiplication, and division of two fractions in a similar way to the add: method (see http://en.wikipedia.org/wiki/Rational_number for the formulae to compute the subtraction, multiplication, and division of two fractions). Each method should take another fraction object as the parameter and return the result as a new Fraction object.
+// 3a - Add methods to the version 4 of the Fraction class to compute the subtraction, multiplication, 
+// and division of two fractions in a similar way to the add: method (see http://en.wikipedia.org/wiki/Rational_number 
+// for the formulae to compute the subtraction, multiplication, and division of two fractions). 
+// Each method should take another fraction object as the parameter and return the result as a new Fraction object.
 class Fraction {
     var numerator: Int = 0
     var denominator: Int = 1
@@ -156,7 +161,8 @@ var f1 = Fraction(1, over: 2)
 var f2 = Fraction(1, over: 4)
 f1.add(f2)  //This has to return 3/4, not 6/8.  It does, thanks to the reduce() method called inside of add().
 
-// 3b - Write test code to test each of the new methods of the class with different input values. Verify that your results are correct.
+// 3b - Write test code to test each of the new methods of the class with different input values. 
+// Verify that your results are correct.
 var f3 = Fraction(1, over: 2)
 var f4 = Fraction(1, over: 5)
 f3.subtract(f4)
